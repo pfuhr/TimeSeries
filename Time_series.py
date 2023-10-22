@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
-#Test
+
 #DataPreprocessing working on the basis of the pd dataframe
 #handle missing values in a pd df in a column with a strategy
 #handling duplicate data
@@ -160,21 +160,3 @@ class DataPreprocessing: #this object can be understood as a process
     
 
 
-''''
-# Example usage:
-data = {'A': [1, 2, None, 4, 5],
-        'B': [None, 2, 3, None, 5],
-        'C': [1, 2, 3, 4, 5]}
-df = pd.DataFrame(data)
-preprocessor = DataPreprocessor(df)
-
-# Fill missing values with the mean of each column
-preprocessor.fill_missing_values(strategy='mean')
-
-# Or drop rows with missing values
-# preprocessor.drop_missing_values()
-
-# Get the preprocessed DataFrame
-processed_data = preprocessor.get_processed_data()
-print(processed_data)
-'''
